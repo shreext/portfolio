@@ -1,0 +1,482 @@
+:root {
+    --zone1: #faf1e6;
+    /* Soft Peach - Top Zone */
+    --zone2: #e4efe7;
+    /* Mint Cream - Middle Zone */
+    --zone3: #99bc85;
+    /* Sage Green - Bottom Zone */
+    --text-dark: #333;
+    --text-light: #555;
+    --white: #fdfaf6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Color Zones */
+.color-zone-1 {
+    background-color: var(--zone1);
+    color: var(--text-dark);
+}
+
+.color-zone-2 {
+    background-color: var(--zone2);
+    color: var(--text-dark);
+}
+
+.color-zone-3 {
+    background-color: var(--zone3);
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--zone3);
+    text-align: center;
+    margin-left: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 18px;
+}
+
+.a1 {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.a1 .info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.a1 h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.a1 p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: var(--zone3);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    border: 2px solid var(--zone3);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--zone3);
+    margin-left: 1rem;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(153, 188, 133, 0.3);
+}
+
+.btn-outline:hover {
+    background: var(--zone3);
+    color: white;
+}
+
+section {
+    padding: 6rem 5%;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--zone3);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-img {
+    background: #ddd;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5rem;
+}
+
+.skill-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.skill-box img {
+    width: 100px;
+    height: 100px;
+}
+
+.skill-box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.portfolio-item {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-img {
+    height: 250px;
+    background: #ddd;
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-info {
+    padding: 1.5rem;
+}
+
+.portfolio-info h3 {
+    margin-top: 0;
+    color: var(--zone3);
+}
+
+.portfolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tag {
+    background: var(--zone1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+}
+
+.zone-d {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 6rem 5%;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.contact-form textarea {
+    height: 150px;
+    margin-bottom: 20px;
+
+}
+
+.contact-form button {
+    border: 2px solid var(--zone1);
+}
+
+/* Footer Styles */
+footer {
+    padding: 4rem 5%;
+    text-align: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.social-links a {
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+}
+/* Existing styles remain the same until nav */
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    padding: 15px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.hamburger-box {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    width: 100%;
+    height: 3px;
+    background-color: var(--zone3);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.2s;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--zone3);
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    top: 10px;
+}
+
+/* Active state for hamburger */
+.hamburger.active .hamburger-inner {
+    background-color: transparent;
+}
+
+.hamburger.active .hamburger-inner::before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active .hamburger-inner::after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: var(--zone1);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        z-index: 999;
+        padding-top: 0;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu li {
+        margin: 1.5rem 0;
+    }
+
+    /* Responsive Typography */
+    .a1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .a1 p {
+        font-size: 1rem;
+        
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* Grid Adjustments */
+    .about-content {
+        grid-template-columns: 1fr;
+        padding: 0 5%; 
+    }
+
+    .skills-container {
+        padding: 0 5%; 
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+
+    .portfolio-grid {
+        padding: 0 5%; 
+        grid-template-columns: 1fr;
+    }
+
+    .zone-d {
+        grid-template-columns: 1fr;
+        padding: 3rem 5%;
+    }
+
+    /* Contact Form Adjustments */
+    .contact-form {
+        padding: 0 5%; /* Equal padding on both sides */
+    }
+    
+    /* Optional: Adjust form input widths if needed */
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+    }
+
+    /* Logo Margin Adjustment */
+    .logo {
+        margin-left: 20px;
+    }
+    .social-links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .social {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-content {
+        gap: 2rem;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 3rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+/* Large Screen Adjustments */
+@media (min-width: 1600px) {
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+/* Existing styles remain the same after this */
