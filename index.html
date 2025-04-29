@@ -55,7 +55,7 @@
                         projects.</p>
                     <p>I'm eager to bring my enthusiasm and skills to the tech world, taking on challenges that push my
                         knowledge and creativity further.</p>
-                    <a href="#" class="btn" style="margin-top: 1.5rem;">Download Resume</a>
+                    <a href="Resume.pdf" target="_blank" class="btn" style="margin-top: 1.5rem;">Download Resume</a>
                 </div>
             </div>
         </section>
@@ -113,7 +113,7 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <div class="portfolio-img" style="background-image: url('https://via.placeholder.com/600x400')">
+                    <div class="portfolio-img" id="ticImg">
                     </div>
                     <div class="portfolio-info">
                         <h3>Tic Tac Toe</h3>
@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-img" style="background-image: url('https://via.placeholder.com/600x400')">
+                    <div class="portfolio-img" id="pdfImg" >
                     </div>
                     <div class="portfolio-info">
                         <h3>PDF Converter</h3>
@@ -142,15 +142,15 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-img" style="background-image: url('https://via.placeholder.com/600x400')">
+                    <div class="portfolio-img" id="trexImg" >
                     </div>
                     <div class="portfolio-info">
-                        <h3>Corporate Branding</h3>
-                        <p>Complete visual identity for tech startup.</p>
+                        <h3>T-Rex</h3>
+                        <p>A Reddit or X clone where anyone can post anythinh anonymously without authentication</p>
                         <div class="portfolio-tags">
-                            <span class="tag">Branding</span>
-                            <span class="tag">Logo Design</span>
-                            <span class="tag">Print</span>
+                            <span class="tag">EJS</span>
+                            <span class="tag">NodeJS</span>
+                            <span class="tag">MongoDB</span>
                         </div>
                         <a href="#" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">View Project</a>
                     </div>
@@ -167,11 +167,11 @@
                 <h2 class="section-title" style="color: white;">Get In Touch</h2>
 
                 <div class="contact-form">
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="text" placeholder="Subject">
-                        <textarea placeholder="Your Message" required></textarea>
+                    <form onsubmit="sendEmail(event)">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="text" id="subject" placeholder="Subject">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
@@ -210,33 +210,5 @@
 
 </html>
 
-<!-- <div class="skill-category">
-    <h3>Design</h3>
-    <div class="skill-item">
-        <div class="skill-name">
-            <span>UI/UX Design</span>
-            <span>95%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 95%"></div>
-        </div>
-    </div>
-    <div class="skill-item">
-        <div class="skill-name">
-            <span>Visual Design</span>
-            <span>90%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 90%"></div>
-        </div>
-    </div>
-    <div class="skill-item">
-        <div class="skill-name">
-            <span>Prototyping</span>
-            <span>85%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 85%"></div>
-        </div>
-    </div>
-</div> -->
+
+   

@@ -161,10 +161,16 @@ section {
 }
 
 .about-img {
-    background: #ddd;
+    background-image: url('images/profile.png');
     height: 400px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .about-text p {
@@ -196,6 +202,16 @@ section {
 .skill-box:hover {
     transform: translateY(-15px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+#trexImg{
+    background-image: url('images/trex.png');
+}
+#ticImg{
+    background-image: url('images/tic.PNG');
+}
+#pdfImg{
+    background-image: url('images/pdfconverter.PNG');
 }
 
 .portfolio-grid {
@@ -277,7 +293,6 @@ section {
 
 /* Footer Styles */
 footer {
-    padding: 4rem 5%;
     text-align: center;
 }
 .social{
